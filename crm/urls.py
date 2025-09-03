@@ -3,5 +3,7 @@ from django.urls import path
 
 
 urlpatterns = [
-	path('', views.say_hello)
+	path('', views.say_hello, name='home'),
+	# path('login/', views.login_user, name='login'),
+	path('logout/', views.logout_user, name='logout'),
 ]
